@@ -6,7 +6,7 @@ import java.util.List;
 public class Time {
 
     private String nome;
-    private String tecnico;
+    private Tecnico tecnico;
     private List<Jogador> jogadores;
     private int vitorias;
     private int empates;
@@ -16,7 +16,7 @@ public class Time {
         jogadores = new ArrayList<>();
     }
 
-    public Time(String nome, String tecnico, List<Jogador> jogadores, int vitorias, int empates, int derrotas) {
+    public Time(String nome, Tecnico tecnico, List<Jogador> jogadores, int vitorias, int empates, int derrotas) {
         this.nome = nome;
         this.tecnico = tecnico;
         this.jogadores = jogadores = new ArrayList<>();
@@ -41,11 +41,11 @@ public class Time {
         this.nome = nome;
     }
 
-    public String getTecnico() {
+    public Tecnico getTecnico() {
         return tecnico;
     }
 
-    public void setTecnico(String tecnico) {
+    public void setTecnico(Tecnico tecnico) {
         this.tecnico = tecnico;
     }
 
