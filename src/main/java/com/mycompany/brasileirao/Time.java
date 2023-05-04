@@ -23,6 +23,9 @@ public class Time {
         this.empates = empates;
         this.derrotas = derrotas;
     }
+     public void adicionarjogador(Jogador jogador ){
+     jogadores.add(jogador);
+     }
 
     public String getNome() {
         return nome;
