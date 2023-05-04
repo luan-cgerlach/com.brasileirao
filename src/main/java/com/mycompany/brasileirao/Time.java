@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Time {
+
     private String nome;
     private String tecnico;
     private List<Jogador> jogadores;
@@ -23,9 +24,14 @@ public class Time {
         this.empates = empates;
         this.derrotas = derrotas;
     }
-     public void adicionarjogador(Jogador jogador ){
-     jogadores.add(jogador);
-     }
+
+    public void adicionarjogador(Jogador jogador) {
+        if (jogadores.size() < 11) {
+            jogadores.add(jogador);
+        }else{
+            System.out.println("Time ja esta completo");
+        }
+    }
 
     public String getNome() {
         return nome;
@@ -79,5 +85,5 @@ public class Time {
     public String toString() {
         return "Time{" + "nome=" + nome + ", tecnico=" + tecnico + ", jogadores=" + jogadores + ", vitorias=" + vitorias + ", empates=" + empates + ", derrotas=" + derrotas + '}';
     }
- 
+
 }
